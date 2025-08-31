@@ -3,11 +3,7 @@
 " ===========================
 call plug#begin()  " Между этих строк добавлять плагины для установки.
 
-Plug 'preservim/nerdtree'
-
 call plug#end()   
-
-nnoremap <C-b> :NERDTreeToggle<CR>
 
 
 " ===========================
@@ -28,14 +24,14 @@ set mouse=a                    " Включаем поддержку мыши
 " ===========================
 set relativenumber             " Включаем относительную нумерацию строк
 set number                     " Включаем абсолютную нумерацию для текущей строки
-set numberwidth=1              " Ширина номера строки
+set numberwidth=3              " Ширина номера строки
 
 syntax on                      " Включаем подсветку синтаксиса
 highlight LineNr ctermfg=NONE guifg=NONE  " Отключаем цвет для номеров строк
 highlight CursorLineNr ctermfg=NONE guifg=NONE  " Отключаем цвет для текущего номера строки
 
-set scrolloff=10               " Отступ от края экрана при прокрутке
-set nowrap                     " Отключает перенос строк
+set scrolloff=7                " Отступ от края экрана при прокрутке
+"set nowrap                     " Отключает перенос строк
 set ruler                      " Показывать текущие координаты курсора
 
 " ===========================
